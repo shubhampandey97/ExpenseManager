@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2025-02-15T10:00:00.000Z" agent="ExpenseManager Architecture" version="20.8.10">
+  <diagram id="ArchitectureDiagram" name="Architecture">
+    <mxGraphModel dx="1510" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Frontend (Streamlit) box -->
+        <mxCell id="2" value="📱 Streamlit Frontend&#xa;• Login UI&#xa;• Add Expense&#xa;• View Dashboard&#xa;• Analytics UI&#xa;• AI Spending Prediction" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#007bff;fillColor=#e8f1ff;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="240" height="230" as="geometry"/>
+        </mxCell>
+
+        <!-- Backend API box -->
+        <mxCell id="3" value="⚙️ FastAPI Backend&#xa;• Auth Routes (/api/login,/api/refresh)&#xa;• Expense CRUD (/api/expenses)&#xa;• Analytics Engine (/api/analytics)&#xa;• AI Prediction (/predict/spending)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#28a745;fillColor=#eaffea;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="380" y="150" width="300" height="260" as="geometry"/>
+        </mxCell>
+
+        <!-- MySQL Database -->
+        <mxCell id="4" value="🗄️ MySQL Database&#xa;• users table&#xa;• expenses table&#xa;• JWT tokens (optional)&#xa;• Analytics queries" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#6c757d;fillColor=#f2f2f2;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="780" y="160" width="240" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- AI Model box -->
+        <mxCell id="5" value="🤖 AI Engine&#xa;• Linear Regression Model&#xa;• Monthly Aggregation&#xa;• Spending Trend Analysis&#xa;• Next Month Prediction" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff9800;fillColor=#fff3e0;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="450" width="260" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow: UI → API Requests -->
+        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;endArrow=classic;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="200" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Arrow: Backend → DB -->
+        <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;endArrow=classic;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow: Backend → AI Engine -->
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;endArrow=classic;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow: AI Engine → Backend (prediction result) -->
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" edge="1" parent="1" source="5" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow: Backend → Frontend (response) -->
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Authentication token flow -->
+        <mxCell id="11" value="🔐 JWT Tokens&#xa;• Login returns access_token + refresh_token&#xa;• Streamlit stores in session" style="whiteSpace=wrap;html=1;rounded=1;strokeColor=#795548;fillColor=#efebe9;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="60" y="420" width="260" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow: Backend → Auth -->
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;startArrow=classic;startFill=1;" edge="1" parent="1" source="3" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Arrow: Auth → Frontend -->
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#000000;endArrow=classic;" edge="1" parent="1" source="11" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

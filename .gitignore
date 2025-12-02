@@ -1,0 +1,55 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.sqlite3
+
+# ---- Environments ----
+.env
+.env.*
+expense_manager/
+venv/
+.venv/
+
+# ---- VS Code ----
+.vscode/
+
+# ---- Bytecode cache ----
+*.py[cod]
+*$py.class
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Logs ----
+*.log
+
+# ---- Migrations ----
+backend/alembic/
+backend/migrations/
+
+# ---- Streamlit Cache ----
+frontend/.streamlit/
+frontend/__pycache__/
+frontend/temp/
+
+# ---- Data ----
+*.csv
+*.xlsx
+data/
+
+# MySQL credentials or dumps
+*.sql
+*.bak
+*.dump
+
+
+# Alembic migrations cache
+backend/migrations/__pycache__/
+
+*generate_ppt_final.py
+*generate_ppt_pro.py
+*generate_ppt.py

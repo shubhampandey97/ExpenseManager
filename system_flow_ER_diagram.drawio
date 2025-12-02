@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
+  <diagram name="Page-1" id="sBwK2cEXMP0abKNRVZZy">
+    <mxGraphModel dx="778" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-1" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="MySQL Database" vertex="1">
+          <mxGeometry height="110" width="120" x="660" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="AI Prediction Engine" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="FastAPI Backend" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Streamlit Frontend" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Send cleaned monthly data" vertex="1">
+          <mxGeometry height="30" width="150" x="490" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-30;" value="Read/Write" vertex="1">
+          <mxGeometry height="30" width="60" x="535" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Predicted sending next month" vertex="1">
+          <mxGeometry height="10" width="180" x="475" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.989;exitY=0.372;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="460.00000000000006" y="239.50000000000006" as="sourcePoint" />
+            <mxPoint x="660" y="239.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="255" as="sourcePoint" />
+            <mxPoint x="460" y="255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-20" edge="1" parent="1" source="mux6yLIzkct3rzpWs6Ow-21" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="mux6yLIzkct3rzpWs6Ow-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="290" as="sourcePoint" />
+            <mxPoint x="430" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="JSON Response" vertex="1">
+          <mxGeometry height="30" width="100" x="190" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-23" edge="1" parent="1" source="mux6yLIzkct3rzpWs6Ow-21" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="290" as="sourcePoint" />
+            <mxPoint x="340" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="FastAPI calls (Login, CRUD, Predict)" vertex="1">
+          <mxGeometry height="30" width="200" x="140" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="User Actions (Add/View Expenses, Dashboard, Prediction)" vertex="1">
+          <mxGeometry height="30" width="210" x="135" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mux6yLIzkct3rzpWs6Ow-30" edge="1" parent="1" style="curved=1;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="225" />
+              <mxPoint x="530" y="80" />
+            </Array>
+            <mxPoint x="460" y="225" as="sourcePoint" />
+            <mxPoint x="660" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
