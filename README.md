@@ -1,3 +1,4 @@
+````markdown
 # 💰 ExpenseManager
 
 A full-stack personal expense management system built with FastAPI, MySQL, and Streamlit.
