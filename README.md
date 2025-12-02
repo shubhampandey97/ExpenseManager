@@ -63,7 +63,7 @@ ExpenseManager/
 ## ⚙️ Installation Guide
 
 ### 🧩 1. Clone the Repository
-git clone https://github.com/<your-username>/ExpenseManager.git
+git clone https://github.com/shubhampandey97/ExpenseManager.git
 cd ExpenseManager
 
 ### 🐍 2. Create & Activate Virtual Environment
